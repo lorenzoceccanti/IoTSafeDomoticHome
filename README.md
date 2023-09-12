@@ -34,6 +34,15 @@ docker start -ai jolly_rubin
 ```
 - Write down the SN number written on the label of the mote you've just flashed
 
+# To automatically compile and execute the Java APP
+- To make the statical CoAP discovery procedure start:
+```
+./startStatiCoap.sh
+```
+- To make the Java Main Application start
+```
+./startApp.sh
+```
 # Other utility commands:
 Please notice that the Contiki code has to be recompiled with the command:
 ```
