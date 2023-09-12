@@ -8,6 +8,10 @@ Where $ could be 0,1,2,...
 
 Also the Border Router has to be recompiled:
 To compile
+'''
 make TARGET=nrf52840 BOARD=dongle PORT=/dev/ttyACM0 border-router.dfu-upload
+'''
 To use tunslip6:
+'''
 make TARGET=nrf52840 BOARD=dongle PORT=/dev/ttyACM0 connect-router
+'''
