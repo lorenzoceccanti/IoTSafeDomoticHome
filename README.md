@@ -2,6 +2,39 @@
 This is the repository for the IoT project that I've developed in september 2023.
 I started the project on Sunday 3rd September and I've finished it on Tuesday 12th September.
 
+# To have the application ready on the IoT VM
+Just follow the following indications:
+- Extract this zip in the folder home/contiki-ng/, then open a terminal and type:
+```
+docker start -ai fervent_sutherland
+```
+```
+./flashBR.sh
+```
+```
+./deployBR.sh
+```
+- Open an other terminal
+```
+docker start -ai jolly_rubin
+```
+- Flash one by one all the WSN devices. For each of this steps use only one USB port at time.
+```
+./flashTemperature.sh
+```
+```
+./flashVOC
+```
+```
+./flashConditionerLight.sh
+```
+- Write down the SN number written on the label of the mote you've just flashed
+```
+./flashSirenFan.sh
+```
+- Write down the SN number written on the label of the mote you've just flashed
+
+# Other utility commands:
 Please notice that the Contiki code has to be recompiled with the command:
 ```
 make TARGET=nrf52840 BOARD=dongle name-file.dfu-upload PORT=/dev/ttyACM$
