@@ -8,8 +8,7 @@ make TARGET=nrf52840 BOARD=dongle name-file.dfu-upload PORT=/dev/ttyACM$
 ```
 Where $ could be 0,1,2,...
 
-Also the Border Router has to be recompiled:
-To compile
+Also the Border Router has to be recompiled. To compile it:
 ```
 make TARGET=nrf52840 BOARD=dongle border-router.dfu-upload PORT=/dev/ttyACM0
 ```
