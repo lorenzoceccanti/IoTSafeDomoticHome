@@ -2,6 +2,8 @@
 This is the repository for the IoT project that I've developed in september 2023.
 I started the project on Sunday 3rd September and I've finished it on Tuesday 12th September.
 
+# The presentation/demo could be find here:
+https://github.com/lorenzoceccanti/IoTSafeDomoticHome/blob/61c669b3f1ff3344cc9794659aaad200edcf8e0b/Presentation.pdf
 # To have the application ready on the IoT VM
 Just execute the following indications:
 - Extract this zip in the folder home/contiki-ng/, then open a terminal and type:
