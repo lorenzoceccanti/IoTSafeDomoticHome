@@ -36,7 +36,7 @@ docker start -ai jolly_rubin
 ```
 - Write down the SN number written on the label of the mote you've just flashed
 
-# To automatically compile and execute the Java APP
+# To automatically compile and execute the Java APP OUTSIDE THE CONTAINER
 - To make the statical CoAP discovery procedure start:
 ```
 ./startStaticCoap.sh
