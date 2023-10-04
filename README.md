@@ -6,9 +6,12 @@ I started the project on Sunday 3rd September and I've finished it on Tuesday 12
 https://github.com/lorenzoceccanti/IoTSafeDomoticHome/blob/c52ec6303c6db6bd289210b15b0648a716764163/Presentation.pdf
 # To have the application ready on the IoT VM
 Just execute the following indications:
+
 - Extract this zip in the folder home/contiki-ng/, then open a terminal and type:
 ```
 docker start -ai fervent_sutherland
+cd /IotSafeDomoticHome-main
+chmod 777 *.sh
 ```
 ```
 ./flashBR.sh
