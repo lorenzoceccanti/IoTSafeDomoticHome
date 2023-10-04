@@ -39,7 +39,7 @@ docker start -ai jolly_rubin
 # To automatically compile and execute the Java APP
 - To make the statical CoAP discovery procedure start:
 ```
-./startStatiCoap.sh
+./startStaticCoap.sh
 ```
 - To make the Java Main Application start
 ```
