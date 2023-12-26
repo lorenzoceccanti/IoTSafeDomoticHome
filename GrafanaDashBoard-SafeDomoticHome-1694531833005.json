@@ -1,44 +1,7 @@
 {
-  "__inputs": [
-    {
-      "name": "DS_SAFEDOMOTICHOME_IOT PROJECT DATA",
-      "label": "SafeDomoticHome IoT project Data",
-      "description": "",
-      "type": "datasource",
-      "pluginId": "mysql",
-      "pluginName": "MySQL"
-    }
-  ],
-  "__requires": [
-    {
-      "type": "grafana",
-      "id": "grafana",
-      "name": "Grafana",
-      "version": "6.7.4"
-    },
-    {
-      "type": "panel",
-      "id": "graph",
-      "name": "Graph",
-      "version": ""
-    },
-    {
-      "type": "datasource",
-      "id": "mysql",
-      "name": "MySQL",
-      "version": "1.0.0"
-    },
-    {
-      "type": "panel",
-      "id": "table",
-      "name": "Table",
-      "version": ""
-    }
-  ],
   "annotations": {
     "list": [
       {
-        "$$hashKey": "object:646",
         "builtIn": 1,
         "datasource": "-- Grafana --",
         "enable": true,
@@ -52,7 +15,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": null,
+  "id": 6,
   "links": [],
   "panels": [
     {
@@ -60,7 +23,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_SAFEDOMOTICHOME_IOT PROJECT DATA}",
+      "datasource": "MySQL",
       "decimals": null,
       "fill": 1,
       "fillGradient": 0,
@@ -145,7 +108,6 @@
       },
       "yaxes": [
         {
-          "$$hashKey": "object:2887",
           "format": "none",
           "label": "",
           "logBase": 1,
@@ -154,7 +116,6 @@
           "show": true
         },
         {
-          "$$hashKey": "object:2888",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -170,7 +131,7 @@
     },
     {
       "columns": [],
-      "datasource": "${DS_SAFEDOMOTICHOME_IOT PROJECT DATA}",
+      "datasource": "MySQL",
       "fontSize": "100%",
       "gridPos": {
         "h": 6,
@@ -188,7 +149,6 @@
       },
       "styles": [
         {
-          "$$hashKey": "object:2990",
           "alias": "",
           "align": "auto",
           "colorMode": null,
@@ -247,7 +207,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_SAFEDOMOTICHOME_IOT PROJECT DATA}",
+      "datasource": "MySQL",
       "description": "",
       "fill": 1,
       "fillGradient": 0,
@@ -335,7 +295,6 @@
       },
       "yaxes": [
         {
-          "$$hashKey": "object:2532",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -344,7 +303,6 @@
           "show": true
         },
         {
-          "$$hashKey": "object:2533",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -363,7 +321,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_SAFEDOMOTICHOME_IOT PROJECT DATA}",
+      "datasource": "MySQL",
       "fill": 1,
       "fillGradient": 0,
       "gridPos": {
@@ -449,7 +407,6 @@
       },
       "yaxes": [
         {
-          "$$hashKey": "object:697",
           "decimals": null,
           "format": "short",
           "label": "Temperature",
@@ -459,7 +416,6 @@
           "show": true
         },
         {
-          "$$hashKey": "object:698",
           "format": "short",
           "label": "",
           "logBase": 1,
@@ -475,7 +431,7 @@
     },
     {
       "columns": [],
-      "datasource": "${DS_SAFEDOMOTICHOME_IOT PROJECT DATA}",
+      "datasource": "MySQL",
       "fontSize": "100%",
       "gridPos": {
         "h": 7,
@@ -493,7 +449,6 @@
       },
       "styles": [
         {
-          "$$hashKey": "object:2990",
           "alias": "",
           "align": "auto",
           "colorMode": null,
@@ -552,7 +507,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_SAFEDOMOTICHOME_IOT PROJECT DATA}",
+      "datasource": "MySQL",
       "fill": 1,
       "fillGradient": 0,
       "gridPos": {
@@ -618,7 +573,6 @@
       ],
       "thresholds": [
         {
-          "$$hashKey": "object:15339",
           "colorMode": "ok",
           "fill": true,
           "fillColor": "rgba(50, 116, 217, 0.2)",
@@ -629,7 +583,6 @@
           "yaxis": "left"
         },
         {
-          "$$hashKey": "object:15345",
           "colorMode": "custom",
           "fill": true,
           "fillColor": "rgba(255, 248, 153, 0.42)",
@@ -640,7 +593,6 @@
           "yaxis": "left"
         },
         {
-          "$$hashKey": "object:15351",
           "colorMode": "warning",
           "fill": true,
           "fillColor": "rgba(50, 116, 217, 0.2)",
@@ -651,7 +603,6 @@
           "yaxis": "left"
         },
         {
-          "$$hashKey": "object:210",
           "colorMode": "critical",
           "fill": true,
           "line": true,
@@ -679,7 +630,6 @@
       },
       "yaxes": [
         {
-          "$$hashKey": "object:14501",
           "format": "percent",
           "label": "",
           "logBase": 1,
@@ -688,7 +638,6 @@
           "show": true
         },
         {
-          "$$hashKey": "object:14502",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -703,7 +652,7 @@
       }
     }
   ],
-  "refresh": false,
+  "refresh": "1s",
   "schemaVersion": 22,
   "style": "dark",
   "tags": [],
@@ -711,8 +660,8 @@
     "list": []
   },
   "time": {
-    "from": "2023-09-10T13:14:14.179Z",
-    "to": "2023-09-10T13:25:55.387Z"
+    "from": "now-5m",
+    "to": "now"
   },
   "timepicker": {
     "hidden": false,
@@ -725,11 +674,11 @@
       ""
     ]
   },
-  "timezone": "",
+  "timezone": "browser",
   "title": "SafeDomoticHome",
   "uid": "3e0_5mmSk",
   "variables": {
     "list": []
   },
-  "version": 28
+  "version": 3
 }
