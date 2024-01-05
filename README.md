@@ -3,7 +3,7 @@ This is the repository for the IoT project that I've developed in september 2023
 I started the project on Sunday 3rd September and I've finished it on Tuesday 12th September.
 
 # The presentation/demo could be find here:
-https://github.com/lorenzoceccanti/IoTSafeDomoticHome/blob/c52ec6303c6db6bd289210b15b0648a716764163/Presentation.pdf
+[update link]
 # To have the application ready on the IoT VM
 Just execute the following indications:
 
