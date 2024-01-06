@@ -3,6 +3,7 @@ package iot.unipi.it;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.Statement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
@@ -30,9 +31,8 @@ public class SafeDomoticHomeDB {
 	public static void setTimezone()
 	{
 		try {
-			PreparedStatement ps = 
-			conn.prepareStatement("SET @@global.time_zone = '+00:00';");
-			ResultSet rs = ps.executeQuery();
+			Statement s = conn.createStatement();
+			ResultSet rs = s.executeQuery("SET @@global.time_zone = '+00:00';");
 		}catch(SQLException se) {
 			System.err.println(se.getMessage());
 		}
