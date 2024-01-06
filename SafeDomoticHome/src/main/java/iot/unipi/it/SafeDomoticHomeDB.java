@@ -32,7 +32,7 @@ public class SafeDomoticHomeDB {
 	{
 		try {
 			Statement s = conn.createStatement();
-			ResultSet rs = s.executeQuery("SET @@global.time_zone = '+00:00';");
+			s.executeUpdate("SET @@global.time_zone = '+00:00';");
 		}catch(SQLException se) {
 			System.err.println(se.getMessage());
 		}
