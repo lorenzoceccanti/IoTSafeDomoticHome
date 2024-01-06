@@ -23,9 +23,6 @@ RESOURCE(clima_res, "Clima res", NULL, res_clima_post_handler, res_clima_put_han
 static void res_clima_post_handler(coap_message_t* request, coap_message_t* response, uint8_t *buffer,
 uint16_t preferred_size, int32_t *offset){
    
-    // NOTE: TO TEST 
-    // coap-client -m post coap://[fd00::f6ce:36b3:3f0b:956]/clima -e "{\"warming\":0,\"cooling\":1}"
-
     int warming; int cooling;
     char outputString[180];
     strcpy(outputString, "");
