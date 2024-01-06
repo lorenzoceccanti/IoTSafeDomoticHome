@@ -1,3 +1,5 @@
+// Code to flash into the VOC + Alarm sensor
+
 // Basing on LEDs status and the button presssion, the alarm
 // zone will change accordingly and so also the to topic towards publish to
 // first color (BLUE): -> zone 0
