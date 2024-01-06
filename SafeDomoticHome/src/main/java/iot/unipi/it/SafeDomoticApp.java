@@ -53,6 +53,7 @@ public class SafeDomoticApp {
 		
 				
 		MqttCollector mqttColl = new MqttCollector(mcc, tr);
+		SafeDomoticHomeDB.setTimezone();
 		System.out.println("***SafeDomoticHome***");
 		showCmd();
 		
