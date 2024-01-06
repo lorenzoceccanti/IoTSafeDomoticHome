@@ -26,7 +26,18 @@ public class SafeDomoticHomeDB {
 			System.err.println(se.getMessage());
 		}
 	}
-	
+
+	public static void setTimezone()
+	{
+		try {
+			PreparedStatement ps = 
+			conn.prepareStatement("SET @@global.time_zone = '+00:00';");
+			ResultSet rs = ps.executeQuery();
+		}catch(SQLException se) {
+			System.err.println(se.getMessage());
+		}
+	}
+		
 	public static String staticCoapDiscovery(String resName)
 	{
 		String result = null;
