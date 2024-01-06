@@ -138,8 +138,7 @@ uint16_t chunk_len)
         if(strcmp(cond.power, "ON")==0)
         {
             // Compare the actual temperature with the selected one
-            // Select also an "intorno", selected as intorno 1C, so 10 as int
-            if(cond.tempset - currentTemp < 0) // < 0.9 celsius
+            if(cond.tempset - currentTemp < 0)
             {
               // The conditioner acts to cool
               warming = false;
