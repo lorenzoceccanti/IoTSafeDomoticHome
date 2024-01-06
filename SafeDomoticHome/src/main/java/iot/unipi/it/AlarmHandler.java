@@ -24,7 +24,6 @@ public class AlarmHandler{
 	{
 		// Query the database to know the address
 		String addr = SafeDomoticHomeDB.staticCoapDiscovery("siren");
-		// Here we suppose to deploy the siren actuator as node n.4 in Cooja
 		CoapClient coapClient = new CoapClient("coap://["+addr+"]/siren");
 		coapClient.setTimeout(500);
 		Request req = new Request(Code.PUT);
