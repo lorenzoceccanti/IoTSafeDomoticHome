@@ -7,7 +7,7 @@ Just execute the following indications:
 
 - Extract this zip in the folder home/contiki-ng/, then open a terminal and type:
 ```
-docker start -ai fervent_sutherland
+contikier
 cd /IotSafeDomoticHome-main
 chmod 777 *.sh
 ```
@@ -19,7 +19,7 @@ chmod 777 *.sh
 ```
 - Open an other terminal
 ```
-docker start -ai jolly_rubin
+contikier
 ```
 - Flash one by one all the WSN devices. For each of this steps use only one USB port at time.
 ```
